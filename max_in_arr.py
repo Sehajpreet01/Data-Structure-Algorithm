@@ -13,19 +13,19 @@ def find_min(arr):
 
 print(find_min(arr))
 
-arr = [1,1,2,3,2,1]
+# arr = [1,1,2,3,2,1]
 
-def count_freq(arr):
-    dict = {}
+# def count_freq(arr):
+#     dict = {}
 
-    for i in range(len(arr)):
-        if arr[i]  in dict:
-            dict = {i:i}
+#     for i in range(len(arr)):
+#         if arr[i]  in dict:
+#             dict = {i:i}
 
-        elif arr[i] in dict:
+#         elif arr[i] in dict:
 
-arr_d = dict(arr)
-print(arr_d)
+# arr_d = dict(arr)
+# print(arr_d)
 
 
 
