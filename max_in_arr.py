@@ -1,88 +1,88 @@
-# arr = [4, 2, 7, 1, 9]
+arr = [4, 2, 7, 1, 9]
 
-# def find_min(arr):
-#     let_min = arr[-1]
-#     for i in range(len(arr)):
+def find_min(arr):
+    let_min = arr[-1]
+    for i in range(len(arr)):
 
-#         if arr[i]<let_min:
-#             let_min = arr[i]
+        if arr[i]<let_min:
+            let_min = arr[i]
 
         
-#     return let_min
+    return let_min
     
 
-# print(find_min(arr))
+print(find_min(arr))
 
-# arr = [1,1,2,3,2,1]
+arr = [1,1,2,3,2,1]
 
-# def count_freq(arr):
-#     dict = {}
+def count_freq(arr):
+    dict = {}
 
-#     for i in range(len(arr)):
-#         if arr[i]  in dict:
-#             dict = {i:i}
+    for i in range(len(arr)):
+        if arr[i]  in dict:
+            dict = {i:i}
 
-#         elif arr[i] in dict:
+        elif arr[i] in dict:
 
-# arr_d = dict(arr)
-# print(arr_d)
-
-
-
-# d = [2,2,2,2]
-
-# freq = {}
-
-# for i in d:
-#     if i in freq:
-#         freq[i] += 1
-
-#     else:
-#         freq[i] = 1
-
-# print(freq)
-
-# f = {}
-
-# f[1] = 1
-# f[2] = 1
-
-# print(f)
-
-# f = {1:1}
-# f[1]+=1
-# print(f)
-
-# arr = [2,1,5,8,1,4]
-# for i in arr:
-#     print(i)
+arr_d = dict(arr)
+print(arr_d)
 
 
-# arr = [1,2,3,4,5,6]
 
-# freq = {}
+d = [2,2,2,2]
 
-# for num in arr:
-#     freq[num] = 1
-#     print(freq)
+freq = {}
 
-# print(freq)
+for i in d:
+    if i in freq:
+        freq[i] += 1
 
-# arr = [1,1,1,2,3,3,2,2,2,1,2,1,4,4]
+    else:
+        freq[i] = 1
 
-# freq = {}
+print(freq)
 
-# for num in arr:
-#     if num in freq:
-#         freq[num] += 1
-#         print(freq)
+f = {}
 
-#     else:
-#         print('about to run else')
-#         freq[num] = 1
+f[1] = 1
+f[2] = 1
+
+print(f)
+
+f = {1:1}
+f[1]+=1
+print(f)
+
+arr = [2,1,5,8,1,4]
+for i in arr:
+    print(i)
 
 
-# print(freq)
+arr = [1,2,3,4,5,6]
+
+freq = {}
+
+for num in arr:
+    freq[num] = 1
+    print(freq)
+
+print(freq)
+
+arr = [1,1,1,2,3,3,2,2,2,1,2,1,4,4]
+
+freq = {}
+
+for num in arr:
+    if num in freq:
+        freq[num] += 1
+        print(freq)
+
+    else:
+        print('about to run else')
+        freq[num] = 1
+
+
+print(freq)
 
 
 s = "apple"

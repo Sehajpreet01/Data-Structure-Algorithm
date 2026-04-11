@@ -37,17 +37,13 @@ class CurrentAccount(BankAccount):
         try:
             if amount <=-500:
 
-
-
-
-
     
-def getbalance(self):
-    return self._BankAccount__balance
+    def getbalance(self):
+        return self._BankAccount__balance
 
-a = BankAccount(0)
-print(a.get_balance())
+        a = BankAccount(0)
+        print(a.get_balance())
 
-print(dir(a))
+        print(dir(a))
 
-print(getbalance(a))
+        print(getbalance(a))

@@ -1,28 +1,28 @@
-# class BankAccount():
-#     def __init__(self, balance = 1000):
-#         self.balance = balance
+class BankAccount():
+    def __init__(self, balance = 1000):
+        self.balance = balance
 
-#     def deposit(self, amount):
-#         self.balance += amount
+    def deposit(self, amount):
+        self.balance += amount
 
-#     def widthdraw(self, amount):
-#         if self.balance > amount:
-#             self.balance -= amount
+    def widthdraw(self, amount):
+        if self.balance > amount:
+            self.balance -= amount
 
-#         else: return 'Insufficient balance'
+        else: return 'Insufficient balance'
 
 
 
-# class Student():
-#     def __init__(self, name, marks):
-#         self.name = name
-#         self.marks = marks
+class Student():
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
         
-#     def add_marks(self, marks):
-#         self.marks += marks
+    def add_marks(self, marks):
+        self.marks += marks
 
-#     def get_average(self, subjects):
-#         return self.marks/subjects
+    def get_average(self, subjects):
+        return self.marks/subjects
 
 
 class Car():
