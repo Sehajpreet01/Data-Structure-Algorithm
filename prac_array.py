@@ -174,8 +174,10 @@ def reverse_even(arr):
 
     return arr
 
-print(reverse_even(arr))
+# print(reverse_even(arr))
 
+
+arr = [0,1,0,3,12]
 def move_zero(arr):
     res = []
     count_zero = 0
@@ -183,10 +185,67 @@ def move_zero(arr):
     for num in arr:
         if num == 0:
             count_zero+=1
-        else:
-            res=num
 
-    # add zeros at end
+        else: 
+            res.append(num)
+
+    for zero in range(count_zero):
+        res.append(0)
+
 
     return res
         
+# print(move_zero(arr))
+
+
+# Remove Duplicates (keep order)
+
+arr = [1,2,2,3,1]
+
+def r_dupes_o(arr):
+
+    new = []
+
+    for i in arr:
+        if i in new:
+            pass
+        else:
+            new.append(i)
+
+    return new
+
+# print(r_dupes_o(arr))
+
+# Majority Element (> n/2 times)
+
+arr = [3,3,4,3,2]
+
+def majority_element(arr):
+    freq = {}
+
+    
+    for i in arr:
+        if i in freq:
+            freq[i] += 1
+
+        else:
+            freq[i] = 1
+ 
+
+    for i in freq:
+        if freq[i]> 2:
+            return i
+        
+    return None
+            
+
+# print(majority_element(arr))
+
+
+# (Variation of Move Zero)
+
+arr = [0,1,0,3,12]
+
+def move_zero_v2(arr):
+
+    
