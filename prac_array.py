@@ -248,4 +248,68 @@ arr = [0,1,0,3,12]
 
 def move_zero_v2(arr):
 
-    
+    non_zero = []
+
+    for i in arr:
+        if i !=0:
+            non_zero.append(i)
+
+    for i in arr:
+        if i ==0:
+            non_zero.append(i)
+
+    return non_zero
+
+# print(move_zero_v2(arr))
+
+
+def final_move_zero_v2(arr):
+    res = []
+    zero_count = 0
+
+    for num in arr:
+        if num == 0:
+            zero_count += 1
+        else:
+            res.append(num)
+
+    # add zeros
+    for _ in range(zero_count):
+        res.append(0)
+
+    return res
+
+
+# Count unique elements
+
+# [1,2,2,3,1] → 3
+
+arr = [1,2,2,3,1]
+
+def unique_elements(arr):
+
+    freq = []
+    count = 0
+
+    for i in arr:
+        if i not in freq:
+            freq.append(i)
+
+        else:
+            pass
+
+    return len(freq)
+
+
+# print(unique_elements(arr))
+            
+
+def unique_elements_v2(arr):
+    return len(set(arr))
+            
+
+# print(unique_elements_v2(arr))
+
+# First Repeating Element
+
+arr = [1,2,3,2,1]
