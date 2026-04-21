@@ -180,7 +180,180 @@ def removedupes_1(arr):
 
     return res
 
-print(removedupes_1(arr))
+# print(removedupes_1(arr))
+
+
+arr = [0,1,0,3,12]
+
+def move_zero(arr):
+    count = 0
+    numbers = []
+
+    for num in arr:
+        if num ==0:
+            count+=1
+
+        elif num>0:
+          numbers.append(num)
+        
+    for num in range(count):
+        numbers.append(0)
+
+    return numbers
+
+
+print(move_zero(arr))
+
+
+def move_zero(arr):
+    j = 0
+
+    for i in range(len(arr)):
+        if arr[i] != 0:
+            arr[j], arr[i] = arr[i], arr[j]
+            j += 1
+
+    return arr
+
+
+arr = [0,1,0,3,12]
+# print(move_zero(arr))
+
+
+arr = [2,5]
+
+arr[0], arr[1] = arr[1], arr[0]
+
+print(arr)
+
+
+
+
+# arr = [1, -2, 3, -4, 5]
+# def negative_to_left(arr):
+
+
+# print((arr))
+
+
+
+
+
+arr = [0,1,0,3,12]
+
+def move_zeros_to_end(arr):
+
+    j = 0
+    for num in range(arr)
+
+print(move_zeros_to_end(arr))
+
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
+
+
+
+# arr = []
+
+# def (arr):
+
+# print((arr))
 
 
 
