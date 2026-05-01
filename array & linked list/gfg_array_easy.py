@@ -202,7 +202,7 @@ def move_zero(arr):
     return numbers
 
 
-print(move_zero(arr))
+# print(move_zero(arr))
 
 
 def move_zero(arr):
@@ -224,7 +224,7 @@ arr = [2,5]
 
 arr[0], arr[1] = arr[1], arr[0]
 
-print(arr)
+# print(arr)
 
 
 
@@ -244,36 +244,64 @@ arr = [0,1,0,3,12]
 def move_zeros_to_end(arr):
 
     j = 0
-    for num in range(arr)
+    for num in range(len(arr)):
 
-print(move_zeros_to_end(arr))
+        if arr[num] != 0:
+            arr[j], arr[num]=arr[num], arr[j]
+            j += 1
 
-
-
-
-# arr = []
-
-# def (arr):
-
-# print((arr))
+    return arr
+    
+# print(move_zeros_to_end(arr))
 
 
+# Move Negatives to Left
+
+arr = [1, -2, 3, -4, 5]
+
+def move_negatives_to_left(arr):
+    j = 0
+
+    for num in range(len(arr)):
+        if arr[num]<0:
+            arr[j], arr[num]= arr[num], arr[j]
+            j+=1
+
+    return arr
 
 
-# arr = []
-
-# def (arr):
-
-# print((arr))
+# print(move_negatives_to_left(arr))
 
 
 
 
-# arr = []
+# Move all EVEN numbers to left
 
-# def (arr):
+arr = [1,2,3,4,5,6]
 
-# print((arr))
+def move_even_to_left(arr):
+
+    j = 0
+
+    for num in range(len(arr)):
+        if arr[num]%2==0:
+            arr[j], arr[num]=arr[num], arr[j]
+            j+=1
+
+    return arr
+
+# print(move_even_to_left(arr))
+
+
+
+
+arr = [1,2,3,4]
+
+def reverse_array(arr):
+    r = 0
+    
+
+print((arr))
 
 
 
