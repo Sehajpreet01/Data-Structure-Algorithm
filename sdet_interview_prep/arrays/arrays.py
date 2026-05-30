@@ -131,3 +131,230 @@ max_val, min_val = find_max_min([3, 1, 7, 2, 9, 4])
 # Q10: Merge two sorted arrays into one sorted array
 # Input:  [1, 3, 5], [2, 4, 6]
 # Output: [1, 2, 3, 4, 5, 6]
+
+
+
+
+# Q1 - Sum of array
+arr = [1,2,3,4]
+
+def sum_arr(arr):
+    total = 0
+
+    for i in arr:
+
+        total +=i
+
+    return total
+
+print(sum_arr(arr)) 
+
+
+# Q2 - Count even numbers
+
+arr = [1,2,3,4,6]
+
+def count_even(arr):
+    total_even = 0
+
+    for i in arr:
+        if i%2 == 0:
+            total_even+=1
+
+    return total_even
+
+print(count_even(arr))
+
+
+# Q3 — Return numbers greater than 5
+
+arr = [2,7,1,9,4]
+
+def greater_then5(arr):
+    total = []
+
+    for i in arr:
+        if i>5:
+            total.append(i)
+
+    return total
+
+print(greater_then5(arr))
+
+
+
+#Q4 — Return squares of numbers
+
+arr = [1,2,3]
+
+def return_square(arr):
+    squ = []
+
+    for i in arr:
+        squ.append(i**2)
+
+    return squ
+
+print(return_square(arr))
+
+
+# Q5 - Count negative numbers
+
+arr = [-1,2,-3,4,-5]
+
+def negative_count(arr):
+    nev = 0
+
+    for i in arr:
+        if i <0:
+            nev+=1
+
+    return nev
+
+print(negative_count(arr))
+    
+
+
+#Q6 — Return odd numbers
+
+arr = [1,2,3,4,5]
+
+def return_odd(arr):
+    odd = []
+
+    for i in arr:
+        if i%2 != 0:
+            odd.append(i)
+
+    return odd
+
+print(return_odd(arr))
+
+
+
+# Q7 — Count numbers greater than 10
+
+arr = [5,12,18,2,20]
+
+def greater_then_10(arr):
+
+    count = 0
+
+    for i in arr:
+        if i>10:
+            count+=1
+
+    return count
+
+print(greater_then_10(arr))
+
+
+
+# Q8 - Return absolute values
+
+
+arr = [-1,2,-3]
+
+def absolute_v(arr):
+
+    absval = [abs(i) for i in arr]
+
+    return absval
+
+print(absolute_v(arr))
+
+
+# Q9 - Count zeros
+
+arr = [0,1,0,2,0]
+
+def count_z(arr):
+    count = 0
+
+    for i in arr:
+        if i ==0:
+            count+=1
+
+    return count
+
+print("zero count: ",count_z(arr))
+
+
+# Q10 — Return numbers divisible by 3
+
+arr = [1,3,6,7,9]
+
+def div_b_3(arr):
+
+    div3val = []
+
+    for i in arr:
+        if i%3 ==0:
+            div3val.append(i)
+
+
+    return div3val
+
+print(div_b_3(arr))
+
+
+# Q11 — Count numbers between 5 and 15 (inclusive)
+
+arr = [2,5,10,16,15]
+
+def count_between_inclusive(arr):
+    count = 0
+
+    for i in arr:
+        if i >= 5 and i <=15:
+            count +=  1
+
+    return count
+
+print(count_between_inclusive(arr))
+
+
+# Q12 — Count frequency of numbers
+
+arr = [1,2,2,3,1]
+
+def count_freq(arr):
+    
+    freq = {}
+    
+    for i in arr:
+        if i in freq:
+            freq[i] += 1
+        else: 
+            freq[i] = 1
+
+    return freq
+
+print(count_freq(arr))
+
+
+# Q13 — First non-repeating element
+
+arr = [1,2,2,3,1,4]
+
+def first_non_repeating(arr):
+
+
+    freq = {}
+
+    element = []
+
+    for i in arr:
+
+        if i in freq:
+            freq[i]+=1
+
+        else: freq[i] = 1
+
+    for i in freq:
+        
+        
+
+    return freq
+        
+print(first_non_repeating(arr))
