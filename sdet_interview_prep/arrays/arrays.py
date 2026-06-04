@@ -339,11 +339,7 @@ arr = [1,2,2,3,1,4]
 
 def first_non_repeating(arr):
 
-
     freq = {}
-
-    element = []
-
     for i in arr:
 
         if i in freq:
@@ -352,9 +348,34 @@ def first_non_repeating(arr):
         else: freq[i] = 1
 
     for i in freq:
-        
-        
+       if freq[i] == 1:
+           return i
 
-    return freq
-        
+   
 print(first_non_repeating(arr))
+
+
+
+# Q14 — Return duplicates only
+
+arr = [1,2,2,3,1,4]
+
+def return_dupes_only(arr):
+
+    freq = {}
+    dupes = []
+    for i in arr:
+        if i in freq:
+            freq[i]+=1
+
+        else: freq[i] = 1
+
+    for i in freq:
+        if freq[i]>1:
+            dupes.append(i)
+        
+    return dupes
+
+        
+print(return_dupes_only(arr))
+
